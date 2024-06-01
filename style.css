@@ -1,0 +1,23 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(var(--cellsAmount), 1fr);  /* Adjust the number of columns as needed */
+    gap: 10px;  /* Adjust the gap between items */
+    padding: 10px;
+}
+.grid-item {
+    background-color: #f7f7f7;
+    /* aspect-ratio: 1/1; */
+    /* width: 50px; */
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+
+    &:hover{
+        background-color: rgb(216, 117, 255);
+        cursor: pointer;
+    }
+
+    &:active{
+        background-color: rgb(239, 194, 255);
+    }
+}
